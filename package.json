@@ -1,0 +1,23 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "description": "Sample express api",
+  "main": "dist/index.js",
+  "author": "Max Harris",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@types/express": "^4.17.0",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "build": "ts-node src/index.ts",
+    "start": "nodemon"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
