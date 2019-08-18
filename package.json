@@ -1,7 +1,7 @@
 {
   "name": "express-api",
   "version": "1.0.0",
-  "description": "Sample express api",
+  "description": "Sample express api with auto-rebuilding built with typescript",
   "main": "dist/index.js",
   "author": "Max Harris",
   "license": "MIT",
