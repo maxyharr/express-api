@@ -16,6 +16,8 @@ Desktop.ini
 # npm
 node_modules
 package-lock.json
+yarn.lock
+yarn-error.log
 *.log
 *.gz
 
