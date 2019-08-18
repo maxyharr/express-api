@@ -27,4 +27,4 @@ coverage
 benchmarks/graphs
 
 # Build
-dist
+dist/

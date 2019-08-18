@@ -11,8 +11,8 @@
     "express": "^4.17.1"
   },
   "scripts": {
-    "build": "ts-node src/index.ts",
-    "start": "nodemon"
+    "dev:hook-cache": "ts-node src/index.ts",
+    "dev": "nodemon"
   },
   "devDependencies": {
     "nodemon": "^1.19.1",
