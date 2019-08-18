@@ -1,4 +1,4 @@
-const wikiController = {
+const wwwController = {
   home: (req, res) => {
     res.send('Home page')
   },
@@ -10,4 +10,4 @@ const wikiController = {
   }
 }
 
-export default wikiController
+export default wwwController
