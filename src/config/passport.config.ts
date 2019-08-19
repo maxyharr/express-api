@@ -5,18 +5,19 @@ dotenv.config()
 
 const opts: StrategyOptions = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-  secretOrKey: process.env.SECRET
+  secretOrKey: process.env.SECRET,
+  passReqToCallback: true,
 }
 
 const passportConfig = (passport) => {
   passport.use(
-    new Strategy(opts, (payload, done) => {
+    new Strategy(opts, (req, payload, done) => {
       User.findById( payload.id ).then(user => {
         if (user) {
+          req.user = user
           return done(null, {
             id: user.id,
             email: user.email,
-            admin: true
           })
         }
         return done(null, false)

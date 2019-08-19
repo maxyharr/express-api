@@ -6,7 +6,7 @@ const wwwController = {
     res.send('About this wiki')
   },
   protected: (req, res) => {
-    res.send('Protected! You must be logged in')
+    res.json({message: 'Protected! You must be logged in as', user: req.user})
   }
 }
 
