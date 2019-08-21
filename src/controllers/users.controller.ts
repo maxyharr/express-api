@@ -1,7 +1,7 @@
 import express from 'express'
 const router = express.Router()
 
-import User from '../../models/user.model'
+import User from '../models/user.model'
 import bcrypt from 'bcrypt'
 
 import dotenv from 'dotenv'

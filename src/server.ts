@@ -35,10 +35,7 @@ app.use(bodyParser.json())
 
 app.use(requestLogger)
 
-import wwwRoutes from './www/routes'
-app.use('/', wwwRoutes)
-
-import apiRoutes from './api/routes'
-app.use('/api', apiRoutes)
+import routes from './routes'
+app.use('/', routes)
 
 app.listen(port, () => console.log(`Example API listening on port ${port}`))
