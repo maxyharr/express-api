@@ -10,7 +10,8 @@ const UserSchema = new Schema({
   password: {
     type: String,
     required: true,
-  }
+  },
+  boards: [{ type: Schema.Types.ObjectId, ref: 'Board' }],
 })
 
 interface IUser extends Document {
